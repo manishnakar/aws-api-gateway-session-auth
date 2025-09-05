@@ -106,16 +106,16 @@ REACT_APP_API_BASE=https://<your-api-id>.execute-api.<region>.amazonaws.com
 ```
 
 🔑 Usage
-Start frontend & backend locally, or deploy backend to EC2/ECS/Fargate
-Go to React app in browser
-Login with test users:
-alice / password123
-bob / secret
-Try “Get Profile” → should return user info
-After inactivity (default 30 min), session expires automatically
+- Start frontend & backend locally, or deploy backend to EC2/ECS/Fargate
+- Go to React app in browser
+- Login with test users:
+- alice / password123
+- bob / secret
+- Try “Get Profile” → should return user info
+- After inactivity (default 30 min), session expires automatically
 
 🔒 Security Notes
-Use HTTPS (API Gateway gives you HTTPS by default)
-Cookies must be Secure + SameSite=None if cross-origin
-Disable authorizer caching (or set low TTL) to keep sliding expiration accurate
-Rotate demo users with a real DB or Cognito for production
+- Use HTTPS (API Gateway gives you HTTPS by default)
+- Cookies must be Secure + SameSite=None if cross-origin
+- Disable authorizer caching (or set low TTL) to keep sliding expiration accurate
+- Rotate demo users with a real DB or Cognito for production
